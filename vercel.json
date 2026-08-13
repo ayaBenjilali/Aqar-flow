@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build:prod",
+  "outputDirectory": "dist/aqarflow/browser",
+  "framework": "angular",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
