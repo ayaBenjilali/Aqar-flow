@@ -93,6 +93,37 @@ The app can be deployed as a static Angular build. Vercel should use:
 - Build command: `npm run build`
 - Output directory: `dist/aqarflow/browser`
 
+## Mobile Apps
+
+AqarFlow is prepared for Android and iOS through Capacitor. The home page also includes visible mobile-readiness indicators so the native version is easy to identify during phone testing.
+
+Create or update the native projects:
+
+```bash
+npm install
+npx cap add android
+npx cap add ios
+npm run cap:build
+```
+
+Open Android Studio:
+
+```bash
+npm run android
+```
+
+Open Xcode on macOS:
+
+```bash
+npm run ios
+```
+
+After every web change, run:
+
+```bash
+npm run cap:build
+```
+
 ## Project Structure
 
 ```text
