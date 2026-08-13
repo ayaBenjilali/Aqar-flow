@@ -5,12 +5,16 @@ import { IonButton, IonIcon, IonSearchbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import {
   businessOutline,
+  checkmarkCircleOutline,
   diamondOutline,
   homeOutline,
   keyOutline,
   mapOutline,
   peopleOutline,
+  phonePortraitOutline,
+  shieldCheckmarkOutline,
   storefrontOutline,
+  syncCircleOutline,
   trendingUpOutline,
   trophyOutline
 } from 'ionicons/icons';
@@ -35,11 +39,19 @@ interface CategoryCard {
   template: `
     <div class="feature-page">
       <main class="page home-page">
-        <section class="luxury-hero">
+        <section class="luxury-hero mobile-polished">
           <div class="hero-copy reveal-up">
             <p class="eyebrow"><ion-icon name="diamond-outline" /> منصة عقارية عربية</p>
             <h1>{{ hero().title }}</h1>
             <p class="hero-text">{{ hero().subtitle }}</p>
+
+            <div class="mobile-ready-card">
+              <ion-icon name="phone-portrait-outline" />
+              <div>
+                <strong>جاهزة للتجربة على الهاتف</strong>
+                <span>واجهة مهيأة لـ Android و iOS عبر Capacitor، مع تنقل سفلي ولمسات WebView.</span>
+              </div>
+            </div>
 
             <div class="hero-search glass-search">
               <ion-searchbar placeholder="ابحث عن فيلا، شقة، مكتب، محل أو أرض..." routerLink="/app/search" />
@@ -69,6 +81,29 @@ interface CategoryCard {
           <article><ion-icon name="people-outline" /><strong>27</strong><span>وسيط موثوق</span></article>
           <article><ion-icon name="trending-up-outline" /><strong>389</strong><span>فرصة CRM</span></article>
           <article><ion-icon name="trophy-outline" /><strong>18%</strong><span>نمو الطلب</span></article>
+        </section>
+
+        <section class="mobile-os-strip reveal-up">
+          <article>
+            <ion-icon name="phone-portrait-outline" />
+            <strong>Android</strong>
+            <span>جاهز لـ Android Studio</span>
+          </article>
+          <article>
+            <ion-icon name="shield-checkmark-outline" />
+            <strong>iOS</strong>
+            <span>جاهز لـ Xcode على Mac</span>
+          </article>
+          <article>
+            <ion-icon name="sync-circle-outline" />
+            <strong>Capacitor Sync</strong>
+            <span>تحديث التطبيق بعد كل build</span>
+          </article>
+          <article>
+            <ion-icon name="checkmark-circle-outline" />
+            <strong>Mobile UX</strong>
+            <span>تنقل سفلي و safe area</span>
+          </article>
         </section>
 
         <section class="role-experience reveal-up">
@@ -286,7 +321,11 @@ export class HomePageComponent {
       storefrontOutline,
       mapOutline,
       keyOutline,
-      trophyOutline
+      trophyOutline,
+      phonePortraitOutline,
+      shieldCheckmarkOutline,
+      syncCircleOutline,
+      checkmarkCircleOutline
     });
   }
 }
