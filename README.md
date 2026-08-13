@@ -4,6 +4,14 @@ AqarFlow is an Arabic-first real estate marketplace prototype built with Angular
 
 The project is designed as a portfolio-grade front-end application. It uses mock services and local state so the complete user flow can be explored without a backend.
 
+## Live Demo
+
+The application is deployed on Vercel:
+
+```text
+https://aqarflow-one.vercel.app/
+```
+
 ## Highlights
 
 - Arabic-first RTL interface with language direction support.
@@ -39,7 +47,7 @@ Start the development server:
 npm start
 ```
 
-Open:
+Open locally:
 
 ```text
 http://127.0.0.1:4300/app/home
