@@ -1,8 +1,12 @@
 # AqarFlow
 
-AqarFlow is an Arabic-first real estate marketplace prototype built with Angular, Ionic, and Capacitor. It presents one product surface for buyers, independent agents, and agency companies: property discovery, favorites, messaging, lead tracking, profile management, and a lightweight CRM dashboard.
+AqarFlow is an Arabic-first real estate marketplace prototype built with Angular, Ionic, and Capacitor. It provides a unified experience for buyers, independent agents, and agency companies, including property discovery, favorites, messaging, lead tracking, profile management, and a lightweight CRM dashboard.
 
-The project is designed as a portfolio-grade front-end application. It uses mock services and local state so the complete user flow can be explored without a backend.
+Designed for:
+- 🌐 Web
+- 📱 Android
+- 🍎 iOS
+The project is structured as a cross-platform portfolio application with a mobile-first, responsive UI and full RTL support. It uses mock services and local state so the complete user experience can be explored without a backend.
 
 ## Live Demo
 
